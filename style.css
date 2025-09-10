@@ -1,0 +1,46 @@
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* Custom styles for animations */
+.section-fade-in {
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    opacity: 1; /* Default to visible */
+}
+.section-fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Hidden class to apply initial hidden state only when JS is guaranteed to run */
+.section-fade-in.hidden-initial {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.project-card-hover {
+    transition: all 0.3s ease-in-out;
+}
+.project-card-hover:hover {
+    box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.4), 0 5px 15px -5px rgba(79, 70, 229, 0.25);
+    transform: translateY(-5px);
+}
+.project-card-hover:hover .project-image {
+    transform: scale(1.05);
+}
+.project-card-hover:hover .project-title {
+    color: #a5b4fc; /* indigo-300 */
+}
+.nav-link-hover:hover {
+    color: #a5b4fc; /* indigo-300 */
+    transform: translateY(-2px);
+}
+/* Style for scroll-smooth (added directly to html tag) */
+html {
+    scroll-behavior: smooth;
+}
+/* Additional dark mode colors for skills section */
+.bg-gray-850 {
+    background-color: #1a202c; /* A slightly darker gray */
+}

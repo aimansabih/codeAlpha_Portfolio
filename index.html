@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiman Sabih| Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-gray-200">
+    <header class="bg-gray-950 text-white shadow-xl sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight mb-2 sm:mb-0 hover:text-indigo-400 transition duration-300">Aiman Sabih</a>
+            <div class="flex space-x-6">
+                <a href="index.html#about" class="nav-link-hover text-lg font-medium transition duration-300 transform">About</a>
+                <a href="index.html#skills" class="nav-link-hover text-lg font-medium transition duration-300 transform">Skills</a>
+                <a href="index.html#projects" class="nav-link-hover text-lg font-medium transition duration-300 transform">Projects</a>
+                <a href="AIMAN SABIH Resume.pdf" class="nav-link-hover text-lg font-medium transition duration-300 transform" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="#contact" class="nav-link-hover text-lg font-medium transition duration-300 transform">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="about" class="bg-gray-800 rounded-xl shadow-xl p-8 mb-12 section-fade-in hidden-initial">
+            <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                <img src="logovector.png" alt="Your Photo" class="w-40 h-40 rounded-full object-cover shadow-md mb-6 md:mb-0">
+                <div>
+                    <h2 class="text-4xl font-extrabold text-indigo-400 mb-4">Hey, I'm Aiman Sabih 👋</h2>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        I'm a passionate <span class="font-semibold text-indigo-300"> Web Developer, UI/UX Designer</span> with a knack for creating engaging and efficient solutions. With a background in <span class="font-semibold">Computer Science</span>, I enjoy transforming complex ideas into user-friendly applications and experiences. I'm always eager to learn new technologies and contribute to innovative projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="bg-gray-800 rounded-xl shadow-xl p-8 mb-12 section-fade-in hidden-initial">
+            <h2 class="text-4xl font-extrabold text-indigo-400 mb-8 text-center">My Skills 🚀</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-850 p-6 rounded-lg shadow-md hover:shadow-xl transform transition duration-300 hover:scale-105">
+                    <h3 class="text-2xl font-bold text-indigo-300 mb-3">Frontend</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Tailwind CSS</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-850 p-6 rounded-lg shadow-md hover:shadow-xl transform transition duration-300 hover:scale-105">
+                    <h3 class="text-2xl font-bold text-purple-300 mb-3">Backend</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Node.js & Express.js</li>
+                        <li>RESTful APIs</li>
+                        <li>Database (MongoDB, PostgreSQL)</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-850 p-6 rounded-lg shadow-md hover:shadow-xl transform transition duration-300 hover:scale-105">
+                    <h3 class="text-2xl font-bold text-violet-300 mb-3">Tools & Others</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Git & GitHub</li>
+                        <li>Docker</li>
+                        <li>AWS (S3, EC2)</li>
+                        <li>UI/UX Design</li>
+                        <li>Agile Methodologies</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="bg-gray-800 rounded-xl shadow-xl p-8 mb-12 section-fade-in hidden-initial">
+            <h2 class="text-4xl font-extrabold text-indigo-400 mb-8 text-center">My Projects ✨</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card-hover bg-gray-850 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2">
+                    <img src="https://placehold.co/400x250/e0e7ff/4f46e5?text=Project+1" alt="Image gallery Project Screenshot" class="project-image w-full h-48 object-cover transition duration-300">
+                    <div class="p-6">
+                        <h3 class="project-title text-2xl font-bold text-indigo-400 mb-2 transition duration-300">Image gallery</h3>
+                        <p class="text-gray-300 mb-4"> Created an image gallery with different images and a hover effect to preview images.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-700 text-indigo-100 text-xs font-semibold px-2.5 py-0.5 rounded-full">HTML</span>
+                            <span class="bg-indigo-700 text-indigo-100 text-xs font-semibold px-2.5 py-0.5 rounded-full">CSS</span>
+                            <span class="bg-indigo-700 text-indigo-100 text-xs font-semibold px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        </div>
+                        <a href="Image Gallery.html" class="inline-block bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 font-medium">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card-hover bg-gray-850 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2">
+                    <img src="https://placehold.co/400x250/e0e7ff/4f46e5?text=Project+2" alt="Project 2" class="project-image w-full h-48 object-cover transition duration-300">
+                    <div class="p-6">
+                        <h3 class="project-title text-2xl font-bold text-indigo-400 mb-2 transition duration-300">Basic Calculator</h3>
+                        <p class="text-gray-300 mb-4"> A simple and modern calculator built using HTML, CSS, and JavaScript with features like light/dark mode, animated button presses, keyboard support, and a history panel for past calculations.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-700 text-purple-100 text-xs font-semibold px-2.5 py-0.5 rounded-full">HTML</span>
+                            <span class="bg-purple-700 text-purple-100 text-xs font-semibold px-2.5 py-0.5 rounded-full">JavaScript</span>
+                            <span class="bg-purple-700 text-purple-100 text-xs font-semibold px-2.5 py-0.5 rounded-full">CSS</span>
+                        </div>
+                        <a href="Calculator/index.html" class="inline-block bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 font-medium">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card-hover bg-gray-850 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2">
+                    <img src="https://placehold.co/400x250/e0e7ff/4f46e5?text=Project+3" alt="Project 3" class="project-image w-full h-48 object-cover transition duration-300">
+                    <div class="p-6">
+                        <h3 class="project-title text-2xl font-bold text-indigo-400 mb-2 transition duration-300">Dental Clinic website</h3>
+                        <p class="text-gray-300 mb-4">A modern and responsive dental clinic website with appointment booking, service details, doctor profiles, and before & after gallery.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-violet-700 text-violet-100 text-xs font-semibold px-2.5 py-0.5 rounded-full">HTML</span>
+                            <span class="bg-violet-700 text-violet-100 text-xs font-semibold px-2.5 py-0.5 rounded-full">Tailwind CSS</span>
+                            <span class="bg-violet-700 text-violet-100 text-xs font-semibold px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        </div>
+                        <a href="shiny-smiles/index.html" class="inline-block bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 font-medium">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="bg-gray-950 text-white text-center p-6 mt-12 rounded-t-xl shadow-inner">
+        <h2 class="text-2xl font-bold text-white mb-4">Contact Me</h2>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="mailto:youremail@example.com" class="text-white hover:text-indigo-400 transition duration-300">Email</a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="text-white hover:text-indigo-400 transition duration-300">LinkedIn</a>
+            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" class="text-white hover:text-indigo-400 transition duration-300">GitHub</a>
+        </div>
+        <p class="mt-6">&copy; 2025 Aiman Sabih. All rights reserved.</p>
+        <p class="text-sm mt-2">Built with Tailwind CSS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
